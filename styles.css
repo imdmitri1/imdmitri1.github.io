@@ -72,9 +72,8 @@ tr:hover {
   margin-bottom: 100px;
 }
 
-.footer a, .footer details {
+.footer a:visited, .footer details:visited {
   color:  #fff;
-  opacity: ;
 }
 
 .footer a:link {
