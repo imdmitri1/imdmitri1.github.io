@@ -1,3 +1,43 @@
-body {
-  background-color: grey;
+body, html {
+  background-color: #ECEFF1;
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+div.container-fluid {
+  height: 100%;
+}
+
+.first, .second, .third, .fourth {
+  min-height: 400px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 760px) {
+    .first, .second, .third, .fourth {
+      height: 100%;
+    }
+}
+
+.first {
+  background-color: green;
+}
+
+.second {
+  background-color: #607d8b;
+}
+
+.third {
+  background-color: #FFD54F;
+}
+
+.fourth {
+  background-color: #009688;
+}
+
+.img-thumbnail {
+
 }
