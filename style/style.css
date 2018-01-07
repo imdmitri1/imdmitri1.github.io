@@ -18,8 +18,10 @@ div.container-fluid {
   text-align: center;
 }
 
+/*  ***********************************/
+
 .first {
-  background-color: #fff9e6;
+  background-color: #E0E0E0;
 }
 
 .contact {
@@ -69,6 +71,7 @@ div.container-fluid {
 }
 
 .web {
+  color: #607D8B;
   margin-top: 30px;
   margin-bottom: 40px;
   font-size: 3em;
@@ -81,15 +84,19 @@ div.container-fluid {
   width: 200px;
   float: left;
   background-color: white;
+  padding: 1px;
   border: 1px solid black;
   border-radius: 5px;
   clear: right;
 }
 
-/****************************/
+/**********************************/
 
 .second {
-  background-color: #5bc0de;
+  background-color: #1976D2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
 }
 
 .proex {
@@ -105,21 +112,37 @@ div.container-fluid {
 .skiexp {
   text-transform: uppercase;
   font-weight: bold;
-  color: #00BFFF;
+  color: #f44336;
   font-size: 1.5em;
   letter-spacing: 3px;
-  margin-bottom: .5rem;
+  margin: 3%;
 }
 
 /***********************  */
 
 .third {
-  background-color: #FFD54F;
+  background-color: #F9A825;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
 }
 
+.third div {
+  margin: 5%;
+}
+
+.date {
+  display: block;
+  font-size: .7em;
+}
+
+/*****************************/
+
 .fourth {
-  background-color: rgb(42, 49, 61);
-  /*overflow: auto;*/
+  background-color: #37474F;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white transparent transparent white;
 }
 
 .projects-pic {
@@ -156,6 +179,7 @@ div.container-fluid {
       max-height: 100%;
       min-height: 100%;
       padding: 5%;
+      border: 0px;
     }
 
     .contact p {
