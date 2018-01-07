@@ -12,9 +12,9 @@ div.container-fluid {
 
 .first, .second, .third, .fourth {
   min-height: 400px;
+  /*min-width: 520px;*/
   /*max-height: 600px;*/
   text-align: center;
-  vertical-align: middle;
 }
 
 .first {
@@ -22,8 +22,36 @@ div.container-fluid {
 }
 
 .contact {
+  margin-top: 15px;
   color: #d9534f;
-  display: inline-block;
+  text-align: left;
+  /*display: inline-block;*/
+  height: 200px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  margin-left: 215px;
+  /*overflow: left;*/
+  min-width: 226px;
+}
+
+.first-links {
+  /*width: 226px;*/
+  /*overflow: auto;*/
+}
+
+.contact i {
+  /*margin-left: 10px;*/
+  margin-top: 4px;
+  float: left;
+  width: 20px;
+  text-align: center;
+}
+
+.contact span {
+  margin-left: 10px;
+  /*overflow: left;*/
 }
 
 .c-black {
@@ -32,15 +60,24 @@ div.container-fluid {
 
 .linkedin {
   color: #0084bf;
-  background-color: white;
+  /*background-color: white;*/
 }
+
+.fa-download {
+  color: green;
+}
+
 .web {
-  font-size: 2em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 3em;
+  text-align: left;
+
 }
 
 .avatar img {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   float: left;
   background-color: #d9534f;
   border: 1px solid black;
@@ -61,7 +98,7 @@ div.container-fluid {
 }
 
 .fourth {
-  background-color: #009688;
+  background-color: rgb(42, 49, 61);
   /*overflow: auto;*/
 }
 
@@ -69,6 +106,8 @@ div.container-fluid {
   background-color: #009688;
 
 }
+
+/********************************/
 
 @media screen and (max-width: 760px) {
     .first, .second, .third, .fourth {
@@ -90,6 +129,26 @@ div.container-fluid {
 /*.img-thumbnail {
 
 }*/
+
+a:link {
+  color: #d9534f;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #d9534f;
+}
+
+a:hover {
+  text-decoration: none;
+  /*cursor: default;*/
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/**********tooltips***********/
 
 .toolti {
     position: relative;
@@ -126,3 +185,5 @@ div.container-fluid {
 .toolti:hover .tooltitext {
     visibility: visible;
 }
+
+/*************************/
