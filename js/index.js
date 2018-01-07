@@ -20,3 +20,26 @@
 //   //   window.screen.availHeight / 2
 //   // );
 // }
+
+
+
+
+
+var sound = new Howl({
+  src: ['sounds/a.wav','sounds/a.mp3']
+})
+//
+// function s(){
+//   // sound.play();
+//   console.log('QQQQQQ')
+// }
+// document.getElementById('speak').addEventListener("click", s());
+$( document ).ready(function() {
+  $('#speak').on('click',function(){
+    sound.play();
+  })
+  $('#speak').on('mouseover',function(){
+    console.log("k")
+    $(this).css({'cursor':'pointer'})
+  })
+});
