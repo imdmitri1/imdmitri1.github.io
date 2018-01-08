@@ -109,7 +109,8 @@ div.container-fluid {
   margin: 0;
 }
 
-.logos * {
+.logos div {
+  display: inline-block;
   margin: 1%;
 }
 
@@ -310,7 +311,7 @@ a:active {
     padding: 1px 0;
     position: absolute;
     z-index: 1;
-    bottom: 105%;
+    bottom: 110%;
     left: 50%;
     margin-left: -60px;
 }
