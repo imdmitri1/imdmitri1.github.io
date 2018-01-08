@@ -12,7 +12,7 @@ div.container-fluid {
 }
 
 .first, .second, .third, .fourth {
-  min-height: 400px;
+  min-height: 350px;
   /*min-width: 520px;*/
   /*max-height: 600px;*/
   text-align: center;
@@ -29,10 +29,12 @@ div.container-fluid {
 }
 
 .contact {
+  margin: 0 auto;
   margin-top: 15px;
   color: #039BE5;
   text-align: left;
   height: 200px;
+  max-width: 510px;
 }
 
 .contact p {
@@ -46,7 +48,7 @@ div.container-fluid {
 }
 
 .first-links p:nth-of-type(1):hover {
-  color: #4DD0E1;
+  color: #4FC3F7;
 }
 
 .contact i {
@@ -73,13 +75,14 @@ div.container-fluid {
 }
 
 .web {
+  margin: 0 auto;
   color: #607D8B;
   cursor: default;
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 3em;
   text-align: left;
-
+  max-width: 510px;
 }
 
 .avatar img {
@@ -91,6 +94,11 @@ div.container-fluid {
   border: 1px solid black;
   border-radius: 5px;
   clear: right;
+}
+
+.avatar img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 @media screen and (max-width: 952px) {
@@ -144,7 +152,7 @@ div.container-fluid {
 .skiexp {
   text-transform: uppercase;
   font-weight: bold;
-  color: #f44336;
+  color: #607D8B;
   font-size: 1.5em;
   letter-spacing: 3px;
   margin: 3%;
@@ -261,6 +269,13 @@ div.container-fluid {
     height: 100%;
     width: 100%;
   }
+  .web {
+    margin-top: 0;
+    /* margin-bottom: 30px; */
+    /* font-size: 3em; */
+    /* text-align: left; */
+    /* max-width: 510px; */
+  }
 }
 
 /********************************/
@@ -272,6 +287,7 @@ div.container-fluid {
       min-height: 100%;
       padding: 5%;
       border: 0px;
+      /* margin: 3% 0; */
     }
 
     .contact p {
@@ -293,6 +309,10 @@ div.container-fluid {
       float: none;
       margin-top: -20px;
       margin-bottom: 10px;
+    }
+
+    .text {
+      font-size: 1.2em;
     }
 }
 
