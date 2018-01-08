@@ -13,7 +13,7 @@ div.container-fluid {
 
 .first, .second, .third, .fourth {
   min-height: 350px;
-  /*min-width: 520px;*/
+  min-width: 365px;
   /*max-height: 600px;*/
   text-align: center;
 }
@@ -21,7 +21,6 @@ div.container-fluid {
 /*  ***********************************/
 
 .first {
-  /* background-color: #F5F5F5; */
   background: #8e9eab;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -80,43 +79,63 @@ div.container-fluid {
   cursor: default;
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 3em;
-  text-align: left;
   max-width: 510px;
 }
+
+/* ************ consone greeting ******************** */
+
+.hidden {
+  opacity:0;
+}
+.console-cont {
+
+  font-size:2.3em;
+  text-align:left;
+  max-width: 510px;
+  margin: 0 auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  /* top:-0.14em; */
+  left:10px;
+}
+
+/* ********************* */
+
 
 .avatar img {
   height: 200px;
   width: 200px;
   float: left;
-  background-color: white;
   padding: 1px;
   border: 1px solid black;
   border-radius: 5px;
   clear: right;
 }
 
-.avatar img:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.avatar:hover img{
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+    /* background-image: url('ds.png'); */
 }
 
 @media screen and (max-width: 952px) {
   .contact {
     font-size: 0.8em;
   }
+  .console-cont {
+    font-size: 1.9em;
+
+  }
 }
 
 /**********************************/
 
 .second {
-  /* background-color: #FBE9E7; */
   background: #8e9eab;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* border-width: 1px; */
-  /* border-style: solid; */
-  /* border-color: transparent transparent transparent #ADA996; */
 }
 
 .proex {
@@ -170,10 +189,6 @@ div.container-fluid {
   background: #8e9eab;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  /* border-width: 1px; */
-  /* border-style: solid; */
-  /* border-color: transparent transparent transparent transparent; */
   cursor: default;
 }
 
@@ -193,13 +208,9 @@ div.container-fluid {
 /*****************************/
 
 .fourth {
-  /* background-color: #37474F; */
   background: #8e9eab;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* border-width: 1px; */
-  /* border-style: solid; */
-  /* border-color: #ADA996 transparent transparent #ADA996; */
 }
 
 .fourth .fa {
@@ -271,10 +282,11 @@ div.container-fluid {
   }
   .web {
     margin-top: 0;
-    /* margin-bottom: 30px; */
-    /* font-size: 3em; */
-    /* text-align: left; */
-    /* max-width: 510px; */
+  }
+  .console-cont{
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
   }
 }
 
@@ -287,7 +299,6 @@ div.container-fluid {
       min-height: 100%;
       padding: 5%;
       border: 0px;
-      /* margin: 3% 0; */
     }
 
     .contact p {
