@@ -1,7 +1,7 @@
 
 // name greeting:
 var sound = new Howl({
-  src: ['sounds/a.wav','sounds/a.mp3']
+  src: ['sounds/hey.wav','sounds/hey.mp3']
 })
 //
 
@@ -15,7 +15,7 @@ $( document ).ready(function() {
 });
 
 // console greeting:
- consoleText(['Hello there!', 'I am a web developer','I am available for work,', 'get in touch!'], 'text',['blaasck']);
+ consoleText(['Hello there!', 'I am a web developer','I am available for work', 'Get in touch!'], 'text',['blaasck']);
 function consoleText(words, id, colors) {
   if (colors === undefined) {colors = ['blue'];}
   var visible = true;
