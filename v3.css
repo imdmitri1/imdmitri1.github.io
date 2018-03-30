@@ -9,3 +9,37 @@
   background-size: cover;
   background-position: center center;
 }
+
+/* ****************** skills ************************** */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.img {
+  height: 45px;
+}
+
+.logos div {
+  text-align: center;
+  display: inline-block;
+  margin: 2px 6px;
+}
+
+.logos {
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #607D8B;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  margin: 1%;
+  cursor: default;
+}
+
+/* ******************  ************************** */
