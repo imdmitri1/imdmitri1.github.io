@@ -1,5 +1,9 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
 #bg {
-  background: url("v3_img/chi.jpg") rgba(0,0,0,0.6);
+  background: url("v3_img/chi.jpg") rgba(0,0,0,0.1);
   height: 100%;
   top: 0;
   width: 100%;
@@ -8,6 +12,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.nav {
+  margin-top: 2%;
+}
+
+.nav-link {
+  padding: .7rem 1rem;
+}
+
+@media screen and (max-width: 575px) {
+  .nav {
+    margin-top: 5%;
+  }
+  .nav-link {
+    padding: .7rem .6rem;
+  }
 }
 
 /* ****************** skills ************************** */
@@ -23,11 +44,12 @@
 .logos div {
   text-align: center;
   display: inline-block;
-  margin: 2px 6px;
+  margin: 10px 10px;
 }
 
 .logos {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(256,256,256,0.6);
+  box-shadow: 1px 1px rgba(256,256,256,0.6);
   text-align: center;
 }
 
@@ -55,3 +77,175 @@
     width: 100%;
     z-index: 999;
 } */
+
+/* ******************  ************************** */
+
+.DS h1 {
+  margin-top: 15%;
+  text-align: center;
+	color: #FFF;
+	font-size: 45px;
+	font-weight: 600;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	text-shadow: -1px 0 1px #000;
+}
+
+.DS h2 {
+  font-size: 29px;
+  text-align: center;
+	color: #fff;
+	text-shadow: -1px 0 1px #000;
+}
+
+@media screen and (max-width: 575px) {
+  .DS h1 {
+    margin-top: 45%;
+    font-size: 36px;
+  }
+}
+
+/* ******************  ************************** */
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/***** Sadie *****/
+/*---------------*/
+
+figure.effect-sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h2 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: #484c61;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h2 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
