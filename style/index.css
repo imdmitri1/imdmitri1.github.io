@@ -1,9 +1,13 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: 'Source Code Pro', monospace;
 }
 
 #bg {
-  background: url("v3_img/chi.jpg") rgba(0,0,0,0.1);
+  background: url("../img/chi.jpg") rgba(0,0,0,0.1);
   height: 100%;
   top: 0;
   width: 100%;
@@ -33,7 +37,7 @@ body {
   }
 }
 
-/* ****************** skills ************************** */
+/* ****************** skills tab ************************** */
 .row {
   margin-left: 0;
   margin-right: 0;
@@ -53,9 +57,13 @@ body {
   background-color: rgba(256,256,256,0.6);
   box-shadow: 1px 1px rgba(256,256,256,0.6);
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.skills {
+.tab-name {
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -64,12 +72,13 @@ body {
   letter-spacing: 3px;
   margin: 1%;
   cursor: default;
-  max-width: 1000px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-/* ******************  ************************** */
+/* ****************** preloader ************************** */
 
-/* #preloader {
+#preloader {
     background: #ffffff;
     bottom: 0;
     height: 100%;
@@ -79,9 +88,63 @@ body {
     top: 0;
     width: 100%;
     z-index: 999;
-} */
+}
 
-/* ******************  ************************** */
+@keyframes boxSpin{
+  0%{
+    transform: translate(-10px, 0px);
+  }
+  25%{
+    transform: translate(10px, 10px);
+  }
+  50%{
+    transform: translate(10px, -10px);
+  }
+  75%{
+    transform: translate(-10px, -10px);
+  }
+  100%{
+    transform: translate(-10px, 10px);
+  }
+}
+
+
+@keyframes shadowSpin{
+  0%{
+    box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
+  }
+  25%{
+    box-shadow: 10px 10px #39CCCC, -10px -10px #FFDC00;
+  }
+  50%{
+    box-shadow: -10px 10px #39CCCC, 10px -10px #FFDC00;
+  }
+  75%{
+    box-shadow: -10px -10px #39CCCC, 10px 10px #FFDC00;
+  }
+  100%{
+    box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
+  }
+}
+
+#load {
+	z-index: 9999;
+  background-color: #FF4136;
+  opacity: 0.75;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  margin: -5px auto 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 0px;
+  border: 5px solid #FF4136;
+  box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
+  animation: shadowSpin 1s ease-in-out infinite;
+}
+
+/* ****************** main page ************************** */
 
 .DS h1 {
   margin-top: 15%;
@@ -108,18 +171,16 @@ body {
   }
 }
 
-/* ******************  ************************** */
+/* ******************  projects tab ************************** */
 
 .grid {
 	position: relative;
 	margin: 0 auto;
-	padding: 1em 0 4em;
 	max-width: 900px;
 	list-style: none;
 	text-align: center;
 }
 
-/* Common style */
 .grid figure {
 	position: relative;
 	float: left;
@@ -128,8 +189,8 @@ body {
 	/* min-width: 320px; */
 	/* max-width: 480px; */
 	/* max-height: 360px; */
-	width: 48%;
-	/* background: #3085a3; */
+  /* background: #3085a3; */
+	/* width: 48%; */
 	background: grey;
 	text-align: center;
 	cursor: pointer;
@@ -198,7 +259,7 @@ body {
 	font-size: 68.5%;
 }
 
-/***** project hover effect *****/
+/********** projects hover effect **********/
 
 figure.hover-effect figcaption::before {
 	position: absolute;
@@ -256,7 +317,7 @@ figure.hover-effect:hover p {
 	transform: translate3d(0,0,0);
 }
 
-/* ***************** link hovering******************* */
+/* ***************** link hovering ******************* */
 
 a:link {
   color: #17599b;
@@ -267,7 +328,6 @@ a:visited {
 }
 
 a:hover {
-    /* color: #0097A7; */
     color: #FFF;
 }
 
@@ -292,10 +352,11 @@ a:active {
   width: 0%;
   content: '.';
   color: transparent;
-  /* background: #0097A7; */
   background: #fff;
   height: 1px;
 }
 .nav-link:hover:after {
   width: 100%;
 }
+
+/* ***************** ******************* */
