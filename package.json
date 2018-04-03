@@ -1,0 +1,24 @@
+{
+  "name": "imdmitri1.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdmitri1/imdmitri1.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imdmitri1/imdmitri1.github.io/issues"
+  },
+  "homepage": "https://github.com/imdmitri1/imdmitri1.github.io#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
